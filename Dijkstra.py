@@ -7,7 +7,7 @@ class Graph:
         self.graph = defaultdict(list)
 
     def add_edge(self, u, v, weight):
-        # Undirected graph (roads go both ways)
+        
         self.graph[u].append((v, weight))
         self.graph[v].append((u, weight))
 
